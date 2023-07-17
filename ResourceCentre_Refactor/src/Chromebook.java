@@ -12,9 +12,9 @@ public class Chromebook extends Item{
 	}
 	
 	public String toString(){
-		String output = "";
-		// Write your codes here
-		return output;
+		String info = super.toString();
+        info += String.format("%-20s\n", os);
+		return info;
 	}
 }
 
